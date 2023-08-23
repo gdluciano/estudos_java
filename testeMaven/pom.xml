@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.gdluciano</groupId>
+	<artifactId>testeMaven</artifactId>
+	<version>0.0.1</version>
+	<!-- jar, war = aplicação java web, pom = quando é pom, é o pai (parent) dos modules-->
+	<packaging>jar</packaging>
+	
+	<!-- <parent>
+		<groupId>pom.parent.groupid</groupId>
+		<artifactId>pom.parent.artifactid</artifactId>
+		<version>1.0</version>
+	</parent>
+	-->
+	
+	<!-- na classe pai (parent, pom)
+		<modules>
+			<module>child-file</module>
+		</modules>
+	-->
+	
+
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.6.9.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.31</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>testandoMaven</finalName>
+	</build>
+</project>
